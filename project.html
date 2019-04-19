@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Tours & Travels</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="project-css.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets\css\slick.css"/>
+  <link rel="stylesheet" type="text/css" href="assets\css\slick-theme.css"/>
+        <style type="text/css">
+          .slick-prev:before, .slick-next:before {
+            color: #09529b !important;
+          }    
+        </style>
+
+</head>
+<body ng-app="">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header-image"> 
+	  <div class="img">
+			<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\website_logo.png" alt="website_logo" height="80px" width="80px" />
+	  </div>
+	 
+	 <div class="header-marquee">
+	  <marquee ><h2>India Tours- Best India Holidays & Vacation Packages | Tourism of India.</h2></marquee>
+	  </div>
+	</div>
+	  
+	  <div class="navbar-header">
+		<ul class="nav nav-tabs">
+    <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Destination</strong> <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Rajasthan</a></li>
+        <li><a href="#">Himachal Pradesh</a></li>
+        <li><a href="#">Kerla</a></li>
+		 <li><a href="#">Sikkim</a></li>
+		 <li><a href="#">Goa</a></li>
+		 <li><a href="#">Assam</a></li>
+		 <li><a href="#">Mahasashtra</a></li>		
+      </ul>
+	  </li>
+	  
+	  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Holiday Ideas</strong> <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+		<h5><b>Adventure Tourism</b></h5>
+        <li><a href="#">Treaking</a></li>
+        <li><a href="#">Skiing</a></li>
+        <li><a href="#">Motor Biking </a></li>
+		 <li><a href="#">Peak Climbing</a></li>
+		 <li><a href="#">Jeep Safari</a></li>
+		 <li><a href="#">Mountain Biking</a></li>
+		<h5><b>Pilgrim Tourism</b></h5>
+		<li><a href="#">Hindu</a></li>
+		<li><a href="#">Sikh</a></li>
+		<li><a href="#">Buddhism</a></li>
+		<li><a href="#">Jain</a></li>
+		<li><a href="#">Muslim</a></li>
+      </ul>
+	  </li>
+	  
+	   <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Packages</strong> <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+		<h5><b>Holiday by Interest</b></h5>
+        <li><a href="#">Beach</a></li>
+        <li><a href="#">Hill Station</a></li>
+        <li><a href="#">Motor Biking </a></li>
+		 <li><a href="#">Ayurveda Tour</a></li>
+		 <li><a href="#">Heritage Tour</a></li>
+		 <h5><b>Luxury Train Tour</b></h5>
+		<li><a href="#">Maharaja Express</a></li>
+		<li><a href="#">Palaces On Wheels</a></li>
+		<li><a href="#">Royal Rajasthan On Wheels</a></li>	
+      </ul>
+	  </li>
+	  
+	  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Places To Stay</strong> <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+			<h5><b>City Wise</b></h5>
+        <li><a href="#">Agra Hotel</a></li>
+        <li><a href="#">Udaipur Hotel</a></li>
+        <li><a href="#">Ladak Hotel </a></li>
+		  <h5><b>Beach Resort</b></h5>
+		<li><a href="#">Neelam the Grand</a></li>
+		<li><a href="#">The Park Calangute</a></li>
+		<li><a href="#">Alor Holiday Resort</a></li>	
+			<h5><b>Luxury Hotel</b></h5>
+		<li><a href="#">Hyatt, Bangalore</a></li>
+		<li><a href="#">Hyatt Regency, Delhi</a></li>
+		<li><a href="#">Leela Palace, Udaipur</a></li>	
+      </ul>
+	  </li>
+	  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><strong>Weekend Gateways</strong> <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Weekend Gateways<b>-Lonavala</b></a></li>
+        <li><a href="#">Weekend Gateways<b>-Matheran</b></a></li>
+        <li><a href="#">Weekend Gateways<b>-Mahabaleshwar</b></a></li>
+		 <li><a href="#">Weekend Gateways<b>-Mumbai</b></a></li>
+      </ul>
+	  </li>
+	  </ul>
+	  </div>   
+</nav>
+<!--<div ng-include="header.html"></div>-->
+
+ <div class="sentence">
+  <center><h1>Let Us Plan A Perfect India <i><strong>Holiday</strong></i> For You</h1></center>	
+</div>
+	
+	
+	<div class="row">
+	<div class="col-md-6" >
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	   <li data-tarfet="#myCarousel" data-side-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+   
+	<div class="carousel-inner">
+      <div class="item active">
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Tajmahal.jpg" alt="Tajmahal" style="height:450px" "width:100px;">
+      </div>
+
+      <div class="item">
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\jaipur.jpg" alt="jaipur" style="height:450px" "width:100%;">
+      </div>
+    
+      <div class="item">
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\mumbai.jpg" alt="mumbai" style="height:450px" "width:100%;">
+      </div>
+	  
+	   <div class="item">
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Qutub-Minar.jpg" alt="Qutub-Minar" style="height:450px" "width:100%;">
+      </div>
+	  
+    </div>
+	</div>
+<div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<div class="col-md-1">
+<div class="mid-sent"> 
+<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\best-winter-img.jpg" alt="best-winter-img"/>
+</div>
+</div>
+
+
+<div class="col-md-5">
+<div class="left-side-imgs">
+<div class="left-side-imgs-box">
+<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\goa.jpg"/>
+<div class="left-side-imgs-details">
+  <a href="goa.html">
+  <h3>GOA</h3>
+  <p>12 TOURS AND ACTIVIIES</p>
+  </a>
+</div>
+</div>
+
+<div class="left-side-imgs-box">
+<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\rajashtan.jpg"/>
+<div class="left-side-imgs-details">
+  <a href="rajashtan.html">
+  <h3>RAJASHTAN</h3>
+  <p>40 tours are active</p>
+  </a>
+</div>
+</div>
+
+
+<div class="left-side-imgs-box">
+<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\ladak.jpg"/>
+<div class="left-side-imgs-details">
+  <a href="ladak.html">
+  <h3>LADAK</h3>
+  <p>30 tours are active</p>
+  </a>
+</div>
+</div>
+<div class="left-side-imgs-box">
+<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\kerala.jpg"/>
+<div class="left-side-imgs-details">
+  <a href="kerla.html">
+  <h3>KERLA</h3>
+  <p>15 tours are active</p>
+  </a>
+</div>
+</div>
+
+
+<div class="left-side-imgs-box">
+<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Himachal.jpg"/>
+<div class="left-side-imgs-details">
+  <a href="#">
+  <h3>HIMACHAL</h3>
+  <p>25 tours are active</p>
+  </a>
+</div>
+</div>
+
+<div class="left-side-imgs-box">
+<img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Kashmir.jpg"/>
+<div class="left-side-imgs-details">
+  <a href="#">
+  <h3>KASHMIR</h3>
+  <p>40 tours are active</p>
+  </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<!-----------------------------------------------------part1 end------------------------------------------------->
+
+<div class="container">
+<div class="wildlife-head">
+<h2><b>Wildlife @ Its Best</b></h2>
+<p>India - The land of Tigers and Elephants, is one of the most interesting wildlife destinations in the world and offers plenty of India wildlife holiday options for enthusiast wildlife lovers. We invite you to explore this amazing wildlife with experts.</p>
+</div>
+
+
+<div class="wildlife-imgs">
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\tiger.jpg" alt="tiger"/>
+</div>
+
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\bird.jpg" alt="bird"/>
+</div>
+
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\assam.jpg" alt="assam"/>
+</div>
+
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\tiger2.jpg" alt="tiger2"/>
+</div>
+
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\rhino.jpg" alt="rhino"/>
+</div>
+
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\tiger3.jpg" alt="tiger3"/>
+</div>
+
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Bird_Cuckoo.jpg" alt "Bird_Cuckoo"/>
+</div>
+
+<div>
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Blue_bird.jpeg" alt "Blue_bird"/>
+</div>
+</div>
+<script type="text/javascript" src="assets\js\jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets\js\slick.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('.wildlife-imgs').slick({
+  dots: true,
+  arrows: true,
+  autoplaySpeed: 1000,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    
+  ]
+});
+});
+</script>
+
+</div>
+</div>
+</div>
+
+<!--------------------------------------------part2 end------------------------------------------------------------>
+
+<div class="container-fluid">
+<div class="recommended">
+<h3>Recommended Indian Tour Pahages</h3>
+</div>
+
+
+<div class="row">
+<div class="col-md-6">
+  <div class="recommended-tour">
+    <a href="#">
+    <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\colture-tour.jpg" alt="colture-tour"/>
+    <div class="recommended-tour-box-area">
+    <h3>CULTURAL TOURS</h3>
+    <h4>10 TOURS AND ACTIVATIES</h4>
+    </div>
+    </a>
+</div>
+</div>
+
+<div class="col-md-3">
+  <div class="recommended-tour">
+    <a href="#">
+     <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\heritage-tour.jpg" alt="heritage-tour"/>
+     <div class="recommended-tour-box-area">
+     <h3>heritage tours</h3>
+     <h4>10 TOURS AND ACTIVATIES</h4>
+     </div>
+     </a>
+</div>
+</div>
+
+<div class="col-md-3">
+  <div class="recommended-tour">
+  <a href="#">
+  <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\kerla-tour.jpg" alt="kerla-tour"/>
+  <div class="recommended-tour-box-area">
+  <h3>kerla tours</h3>
+  <h4>10 TOURS AND ACTIVATIES</h4>
+  </div>
+  </a>
+</div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+    <div class="packages">
+    <a href="#">
+   <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\honemoon-tour.jpg" alt="honemoon-tour"/>
+   <div class="packages-img-detials">
+       <h3><b>Honeymoon Tours</b></h3>
+       <h4><b>10 tours & Activity</b></h4>
+       </div>
+     </a>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="packages">
+    <a href="#">
+    <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\treeking-tour.jpg" alt="treeking-tour"/>
+    <div class="packages-img-detials">
+       <h3><b>Treaking Tours</b></h3>
+       <h4><b>10 tours & Activity</b></h4>
+       </div>
+    </a>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="packages">
+    <a href="#">
+    <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\pilgrim-tour.jpg" alt="pilgrim-tour"/>
+    <div class="packages-img-detials">
+       <h3><b>Pilgrimige Tours</b></h3>
+       <h4><b>10 tours & Activity</b></h4>
+       </div>
+     </a>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <div class="packages">
+    <a href="#">
+    <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\beach-tour.jpg" alt="beach-tour"/>
+    <div class="packages-img-detials">
+       <h3><b>Beach Tours</b></h3>
+       <h4><b>10 tours & Activity</b></h4>
+       </div>
+    </a>
+    </div>
+  </div>
+</div>
+</div>
+<!-----------------------------------------------part3 end----------------------------------------------------------------->
+
+<div class="exp-title">
+  <h3>Experience The Best</h3>
+</div>
+
+  <div class="exp-title-box">
+   <div class="row">
+     <div class="col-md-3">
+      <div class="exp-title-img">
+       <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\mice.jpg" alt="mice"/>
+      </div>
+     </div>
+
+    <div class="col-md-3">
+      <div class="exp-title-img">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\medical-tour.jpg" alt="medical-tour"/>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="exp-title-img">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\luxury-tour.jpg" alt="luxury-tour"/>
+      </div>
+    </div>
+    
+    <div class="col-md-3">
+      <div class="exp-title-img">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\destination-weddings.jpg" alt="destination-weddings"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------------------------------------------------------part4 end---------------------------------------------------->
+
+<div class="book-title">
+  <h3>Why Book With Indian Tour</h3>
+</div>
+
+<div class="booking-info-1">
+  <div class="row">
+    <div class="col-md-4"align="center">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\customer-care.jpg" alt="customer-care"/>
+        <h4>Best Upcoming Indian Tour Operator In India</h4>
+        <p>Tour My India Pvt. Ltd. has consistently aspired to be a reliable and approachable tour operator that makes good its promises, something which has been lauded by customers and industry experts alike. We are the proud winners of the "Best Upcoming Inbound Tour Operators in Noida" award in 2013, presented by World Tourism Brand Academy in the field of "Excellence in the Tourism Industry."</p>
+    </div>
+    <div class="col-md-4" align="center">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Airplane.png" alt="Airplane"/>
+         <h4>Hassle Free Holiday Planing</h4>
+         <p>We understand our customers and always deliver on our promises. And we don't stop at just offering customized packages, but see to it that the tour goes smoothly and as planned for an unparalleled travel experience. Be it special interest tours, budget travelling, family holidays, honeymoons or adventure tours, we can make it in a click for you.</p>
+    </div>
+    <div class="col-md-4" align="center">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\guarantee.jpg" alt="guarantee"/>
+         <h4>Best Deals Guaranted</h4>
+         <p>Being a customer-driven travel company, we fully understand the desires as well as compulsions of the traveler and take them into account while making travel deals. The end result is custom-packages that allow clients to have maximum fun without burning a hole in the pocket.</p>
+    </div>
+  </div>
+</div> 
+
+<div class="booking-info-2">
+  <div class="row">
+    <div class="col-md-4" align="center">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\travel-expert.jpg" alt="travel-expert"/>
+        <h4>50+ Travel Experts</h4>
+        <p>The backbone of the company is its team of 50+ Travel Experts, who bring diverse experience and skills to the table. They work round-the-clock so that our customers can devote all their energy to sightseeing and having fun leaving issues like logistics and planning in our able hands.</p>
+    </div>
+    <div class="col-md-4" align="center">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\growing.jpg" alt="growing"/>
+        <h4>Fastest Growing Travel Company</h4>
+        <p>Based on a transparent business model and with over 150,000+ happy customers, Tour My India Pvt. Ltd. today is one of the fastest growing tour operators in India. We are a team of 200+ travel experts with experience in all expect should be aspect of planning and execution, and can give wings to your dreams.</p>
+    </div>
+    <div class="col-md-4" align="center">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\build.jpg" alt="build"/>
+        <h4>Contracted Hotels in India</h4>
+        <p>We have alliance with over 45,000 hotels across India including both budget and luxury hotels and can arrange accommodation for you as per you demands and budget. Many of these hotels are known for outstanding services and genial hospitality, so you are assured of a pleasant stay.</p>
+    </div>
+  </div>
+</div>
+
+<div class="last-header">
+  <h3>About Incredible India</h3>
+</div>
+
+
+  <div class="row">
+    <div class="col-md-7">
+      <div class="last-header-info">
+      <p>The land which has undoubtedly its own way of life; the land that showcases the scintillating part of natural beauty, majestic culture, ancient heritage and grand wildlife; India invites all for a tremendous classical tour at its variant location for various purposes and for different reasons for celebration.</br>
+      </br>
+
+      Tour My India takes the privilege to make you get acquainted with the glorified treasures of this amazing ancient country. The country which is full of differences and with the most alluring tour operating services we are ready to assist you to recognize and respect those differences and versatility in a grand and royal manner. For booking, accommodation, transportation and guidance our dedicated members will always stand by you to bring the most impressive Tour My India Travel Services.</br>
+      </br>
+
+      From Northern Himalayas to Southern beaches, Eastern jungles to Western deserts, India is flourished with so many cultural and geographical diversities, a perfect reason for India tourism.There is simply no other words that catch the true enigma of this land where great legends still holds its power and impression, the grand architectural structures are the true reflector of history and the life of the spirit can be sacredly glimpsed at different temples and pilgrimage sites at its every corner.<span id="dots">...</span><span id="more"></br>
+      </br>
+
+      Royal Rajasthan, lying at the west end part is the most blissful state where colorful attires and vibrant cultures are its true enigma. The land of the Rajputs showcases many forts and palaces and sustained museums drawing people to experience impressive travel to India. The city palace in Jaipur and Udaipur are the true pride of royal Rajputana kingdom, Lake Palace in Udaipur at Jag Niwas Island reflects the true sanctity of pure white marble structure. The Chittorgarh Fort symbolizes the valorous tradition of Rajputs. The Amber Fort is the true emblem of both Rajputana and Mughal architectural marvels. Besides, the world famous Pushkar Fair brings huge amount of camel and cattle trade with ancient Hindu practices.</br>
+      </br>
+      India is also framed with many spiritual and holy regions right from the sacred Himalayan valleys to the oceanic temples of South. Badrinath, Haridwar, Rishikesh, Varanasi, Dwarka at North-east region; Puri, Somenath, Mahabalipuram, Hoysla, Meenakshi Temple, Tirupati Balaji Temple, Konark (Sun) Temple and Ramshwaram Temple in South India are the sacred destination to attain spirituality.</br>
+      </br>
+
+      The history of India is engraved deeply and incessantly at its ancient paintings, rock carved structures and sculptures at different ancient caves and monuments. The Ajanta, Ellora and Elephanta in Maharashtra, Hoysala Architecture and temple in Karnataka and ancient Mahabalipuram in Tamil Nadu are the perfect examples for historical connections in India.</br>
+        </br>
+      India Tourism also brings a fantastic opportunity of backwater tour in its vast, eloquent beaches. The magnanimous beaches of Kerala, Goa, Maharashtra and Tamil Nadu soak ever moods along with the tranquility of the nature. Kovalam, Baga, Marine Drive, Calangute, Juhu Beach, Dona Paula Beach are some of the magnificent sea-sides that brings tremendous enjoyable options for the party freaks and the romantic honeymooners along with some relaxing Ayurvedic Treatment Centers and Spa therapies.</br>
+      </br>
+
+      But above all these fantastic features, the most royal experience one can have with India tourism is its grand wildlife tour at different dense jungles and sanctuaries. For the welfare of the endangered species and balancing the eco-system, India is designed with more than 500 sanctuaries and bio-reserve. India proudly holds tremendous counts of wild species in the respective zones for great wilderness. The names of Ranthambore, Corbett and Kanha are most popular for tiger tours, where on the other hand Kaziranga in Assam is the perfect home for great Indian Rhinos along with SasanGir in Gujarat to bring the majestic Asiatic Lions. In addition to this, India is a perfect paradise for the bird watchers and for the enthusiastic ornithologists who can easily visit Bharatpur Bird Sanctuary in Rajasthan, Chilka Lake Bird Sanctuary in Orissa, Thattekad Bird Sanctuary in Kerala and more for much fun and excitements.</br>
+      </br>
+
+      India is definitely the land of dreams and fantasy and people visiting this incredible land wish to come again and again and experience the true glory of the nation.</span></p>
+
+      <button onclick="myFunction()" id="myBtn">Read more</button>
+      <script>
+        function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        moreText.style.display = "none";
+        } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        moreText.style.display = "inline";
+        }
+          }
+      </script>
+    </div>
+  </div>
+      <div class="col-md-5">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+          <div class="carousel-inner">
+              <div class="item active">
+                <p>We really enjoyed the Chopta Chandrashila trek arranged by you. Really appreciate all the help with arranging it for us. The cooks and our guide Akash were awesome and made our trip memorable. All arrangements exceeded our expectations and kids enjoyed a lot too. Looking forward to do more adventurous trips with you. Thank you again! My wife will leave a feedback on TripAdvisor too about our amazing experience. If you have a specific page let us know.</p></br>
+              </br>
+
+                <h4>Prashant Nisar</h4>
+             </div>
+
+             <div class="item">
+               <p>I would like to thank you for a wonderful trip! We were immensely happy with the arrangements that you had made. We were especially grateful to have a great driver, Akash, who made the long drives manageable.</p></br>
+               </br>  
+
+               <h4>Rheea Razdan</h4>
+             </div>
+
+            <div class="item">
+               <p>Had a great experience with 'Tour My India' - Anil planned my trip to Tadoba and Jim Corbett wonderfully and organized drivers for us at each point. The safaris were amazing - highly recommend!</p></br>
+             </br>
+
+             <h4>Ambria</h4>
+           </div>
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+           </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+         </a>
+         </div>
+         </div>
+        </div>
+
+        <div class="line">
+          <h3>_______</h3>
+        </div>
+
+   <div class="footer">
+      <div class="footer-box">
+      <h5>IN THE MAIN SECTION</h5></br>
+      <ul>
+        <li><a href="#">Package Tour</a></li>
+        <li><a href="#">Fixed Depature Tour</a></li>
+        <li><a href="#">Book A Hotel</a></li>
+        <li><a href="#">Company Profile</a></li>
+        <li><a href="#">Testimonial</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Register Your Hotel</a></li>
+      </ul>
+      </div>
+      
+      <div class="footer-box-1">
+        <h5>LEGAL POLICY</h5></br>
+        <ul>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">Disclaimer</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">We are Hiring</a></li>
+          <li><a href="#">Share Your Travel Experience</a></li>
+        </ul>
+      </div>
+      <div class="footer-box-2">
+        <h5>SOCIAL MEDIA</h5></br>
+      </br>
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\youtube.png" alt="youtube.png"/>
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\twitter.png" alt="twitter.png"/>
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\google+.png" alt="google+.png"/>
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Facebook.png" alt="Facebook.png"/>
+        <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\pinetrest.png" alt="pinetrest.png"/>
+      </div>
+      <div class="line">
+      <h5><strong>_____________________________________________________________________________________________________________________________________________________________________________</strong></h5>
+      </div>
+        
+      <div class="footer-img">
+      <img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\footer-logo.png" alt="footer-logo.png"/>
+      <p>Tours & Travels</p>
+      </div> 
+      <label class="ln">
+        <p>____________</p>
+      </label>
+      <label class="footer-address"> 
+        <ul>
+        <li><img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\lo.jpg" alt="location.jpg"/><p>C - 81C, Sector - 8, Noida - 201301</p></li>
+        <li><img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\cl.jpg" alt="call.jpg"/><p>+91-120-4052615 - 99 (85 hunting lines are available)</p></li>
+        <li><img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\Fa.jpg" alt="Fa.jpg"/><p>+91-120-4052699</p></li>
+        <li><img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\mo.jpg" alt="mo.jpg"/><p>+91-9212777223/24</p></li>
+        <li><img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\email.jpg" alt="email.jpg"/><p>info@tourmyindia.com</p></li>
+        <li><img src="C:\Users\shreya.LAPTOP-VOECL2HA.000\Desktop\Pictures\whatsapp.jpg" alt="whatsapp.jpg"/><p>+91-9212553106 (Only for Whatsapp)</p></li>
+      </ul>
+      </label>
+    </div>
+
+
+
+</div> 
+</body>
+</html>
